@@ -1,0 +1,33 @@
+.footer{
+  background-color: rgb(43, 42, 42);
+  overflow: hidden;
+  position: sticky;
+  top: 100%;
+  padding: 20px 10px;
+}
+h1
+{
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: large;
+}
+a
+{
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: medium;
+}
+a:hover
+{
+  color: var(--primary-color);
+}
+i
+{
+  padding: 0px 10px;
+}
+p
+{
+  color: whitesmoke;
+  font-size: medium;
+}
