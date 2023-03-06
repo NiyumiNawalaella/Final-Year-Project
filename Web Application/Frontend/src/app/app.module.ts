@@ -10,6 +10,7 @@ import { AccountComponent } from './pages/account/account.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PromotionComponent } from './pages/promotion/promotion.component';
 import { SearchComponent } from './pages/search/search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SearchComponent } from './pages/search/search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
