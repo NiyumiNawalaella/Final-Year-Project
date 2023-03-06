@@ -10,9 +10,7 @@ import { AccountComponent } from './pages/account/account.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PromotionComponent } from './pages/promotion/promotion.component';
 import { SearchComponent } from './pages/search/search.component';
-import { ImagePanelComponent } from './pages/image-panel/image-panel.component';
-import { ModelComponent } from './pages/model/model.component';
-import { TestimonyComponent } from './pages/testimony/testimony.component';
+
 
 @NgModule({
   declarations: [
@@ -24,9 +22,6 @@ import { TestimonyComponent } from './pages/testimony/testimony.component';
     AboutComponent,
     PromotionComponent,
     SearchComponent,
-    ImagePanelComponent,
-    ModelComponent,
-    TestimonyComponent,
   ],
   imports: [
     BrowserModule,
