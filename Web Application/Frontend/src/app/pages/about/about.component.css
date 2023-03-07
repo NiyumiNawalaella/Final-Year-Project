@@ -77,7 +77,12 @@
 }
 .left
 {
-  background-color: blue;
+  /* background-color: blue; */
+
+  background-image: url("../../../assets/images/testimonial/1.jpg");
+  opacity: 0.8;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .right
 {
