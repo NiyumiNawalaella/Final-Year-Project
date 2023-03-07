@@ -137,10 +137,6 @@ textarea{
 }
 .btn-group .btn{
   border-radius: 12px;
-  padding-block: 1vh;
-}
-input[type="radio"]{
-  appearance: none;
 }
 label{
   margin-bottom: 0;
