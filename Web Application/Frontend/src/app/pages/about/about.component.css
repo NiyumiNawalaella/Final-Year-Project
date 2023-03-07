@@ -69,6 +69,7 @@
 {
     font-weight: 50;
 }
+/* split */
 .left, .right
 {
   height: 50vh;
@@ -81,6 +82,12 @@
 .right
 {
   background-color: aqua;
+}
+@media screen and (min-width:768px) {
+  .left, .right
+  {
+    height: 100vh;
+  }
 }
 /* .testimonials .split {
   height: 100%;
