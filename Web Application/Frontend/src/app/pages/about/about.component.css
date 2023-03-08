@@ -71,7 +71,7 @@
     font-weight: 50;
     color: black;
 }
-.testimonial-card .profile img
+/* .testimonial-card .profile img
 {
 
   left: 50%;
@@ -98,15 +98,15 @@
   background: rgb(104, 104, 104);
   position: relative;
 
-}
-.person-text, .person-name
+} */
+/* .person-text, .person-name
 {
   color: #222;
-  /* width: 1500px; */
+  /* width: 1500px;
   text-align: center;
-  /* padding-top: auto; */
-}
-.person-name
+  /* padding-top: auto;
+} */
+/* .person-name
 {
   color: #160aab;
 }
@@ -139,7 +139,7 @@ span
   padding: 140px 10px;
   width: 500px;
   display: flex;
-}
+} */
 /* split */
 .left, .right
 {
