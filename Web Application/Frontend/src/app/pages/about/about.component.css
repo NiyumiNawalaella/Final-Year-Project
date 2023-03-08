@@ -74,6 +74,7 @@
 {
   height: 50vh;
   width: 100%;
+
 }
 .left
 {
@@ -87,7 +88,8 @@
 }
 .right
 {
-  background-color: aqua;
+  background-color: rgb(184, 212, 212);
+  opacity: 1;
 }
 @media screen and (min-width:768px) {
   .left, .right
@@ -95,6 +97,22 @@
     height: 100vh;
   }
 }
+/* right */
+.product-item-content {
+  border: 1px solid var(--surface-d);
+  border-radius: 3px;
+  margin: 0.3rem;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: snow;
+}
+
+.product-image {
+  width: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+      0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 input{
   font-size: 0.85rem;
 }
