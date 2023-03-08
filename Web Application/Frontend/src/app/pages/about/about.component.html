@@ -110,6 +110,53 @@
                       </div>
                   </ng-template>
               </p-carousel> -->
+              <div style="width: 80%;">
+                <p-carousel [value]="images" [autoplayInterval]="1000">
+                  <ng-template let-images pTemplate="item">
+                    <div class="product-item" style="width: 80%;">
+                      <div class="product-item" style="width: 80%">
+                      <div class="product-item-content">
+                        <img class="profile img" [src]="images.previewImageSrc" style="overflow: hidden;background-repeat: no-repeat;" width="100%" height="100%" comment="images.comment" [name]="images.name">
+                        <!-- <section>
+                          <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                            <div class="testimonial-container">
+                              <div class="testimonial-section">
+
+                                <div class="media-element">
+                                  <div class="space">
+                                  <div class="testimonial-card">
+                                    <div class="profile">
+                                      <img src="../../../assets/images/testimonial/user/1.jpg" />
+                                    </div>
+                                    <div class="card-body">
+                                      <p class="person-text">The facilities are well maintained. And the staff were warm welcoming and very helpful. I was very satisfied with the sport club services. I will be continuing my journey with them!</p>
+                                      <p class="person-name"><span>By</span> Anna Blake</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="media-element">
+
+                                    <div class="space">
+                                  <div class="testimonial-card">
+                                    <div class="profile">
+                                      <img src="../../../assets/images/testimonial/user/2.png" />
+                                    </div>
+                                    <div class="card-body">
+                                      <p class="person-text">Let’s go sports club! Had so much fun and wonderful experience at your sports club. Will be coming soon to enjoy your facilities.</p>
+                                      <p class="person-name"><span>By</span> Jason Miller</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div></div></section> -->
+                      </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </p-carousel>
+              </div>
           </div>
           </div>
   </section>
