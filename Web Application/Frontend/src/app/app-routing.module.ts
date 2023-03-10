@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'promotion', component:PromotionComponent},
   {path: 'search', component:SearchComponent},
 
-  {path: 'search/:game-search', component:HomeComponent}
+  {path: 'search/:shop-search', component:HomeComponent}
 
 ];
 

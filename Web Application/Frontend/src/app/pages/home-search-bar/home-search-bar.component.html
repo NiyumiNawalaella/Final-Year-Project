@@ -1,1 +1,29 @@
-<p>home-search-bar works!</p>
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select
+    panelClass="sort-select"
+    [(ngModel)]="sort"
+    >
+    <mat-option value="name">Name</mat-option>
+    <mat-option value="-Food">Food</mat-option>
+    <mat-option value="-Super Market">Super Market</mat-option>
+    <mat-option value="-Clothing">Clothing</mat-option>
+    <mat-option value="-Jewellery">Jewellery</mat-option>
+    <mat-option value="-Home Decor">Home Decor</mat-option>
+    <mat-option value="-Electronics">Electronics</mat-option>
+
+    </mat-select>
+  </mat-form-field>
+  <div class="shops">
+    <div class="shop">
+      <div class="shop-thumb-container">
+        <img class="shop-thumbnail" src="../../../assets/images/home/shop-logo/1.jpg" alt="thumbnail"/>
+      </div>
+      <div class="shop-description">
+        <p class="shop-name">Puma</p>
+        <div class="shop-location">First Floor</div>
+      </div>
+    </div>
+  </div>
+</div>
