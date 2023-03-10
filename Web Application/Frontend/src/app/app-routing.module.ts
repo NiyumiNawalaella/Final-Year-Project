@@ -12,8 +12,9 @@ const routes: Routes = [
   {path: 'about', component:AboutComponent},
   {path: 'account', component:AccountComponent},
   {path: 'promotion', component:PromotionComponent},
-  {path:  'search', component:SearchComponent},
+  {path: 'search', component:SearchComponent},
 
+  {path: 'search/:game-search', component:HomeComponent}
 
 ];
 

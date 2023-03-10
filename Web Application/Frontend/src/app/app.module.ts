@@ -21,6 +21,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { HomeSearchBarComponent } from './pages/home-search-bar/home-search-bar.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { MatSelectModule } from '@angular/material/select';
     AboutComponent,
     PromotionComponent,
     SearchComponent,
+    HomeSearchBarComponent,
   ],
   imports: [
     BrowserModule,
