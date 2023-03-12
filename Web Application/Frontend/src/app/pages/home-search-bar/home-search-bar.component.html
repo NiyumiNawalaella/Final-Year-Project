@@ -3,8 +3,8 @@
     <mat-label>Sort</mat-label>
     <mat-select
     panelClass="sort-select"
-    [(ngModel)]="sort"
-    >
+    [(ngModel)]="sort">
+    <!-- >    (selectionChange)="searchShops()"  -->
     <mat-option value="name">Name</mat-option>
     <mat-option value="-Food">Food</mat-option>
     <mat-option value="-Super Market">Super Market</mat-option>
@@ -16,14 +16,19 @@
     </mat-select>
   </mat-form-field>
   <div class="shops">
+    <!-- <ng-container *ngFor="let shop of shops"> -->
     <div class="shop">
       <div class="shop-thumb-container">
         <img class="shop-thumbnail" src="../../../assets/images/home/shop-logo/1.jpg" alt="thumbnail"/>
+        <!-- <img
+     *ngIf="shop.background_image"
+        class="shop-thumbnail" src="{{shop.background_image}}" alt="thumbnail"/> -->
       </div>
       <div class="shop-description">
         <p class="shop-name">Puma</p>
         <div class="shop-location">First Floor</div>
       </div>
     </div>
+    <!-- </ng-container> -->
   </div>
 </div>
