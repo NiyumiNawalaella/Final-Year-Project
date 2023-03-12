@@ -1,4 +1,42 @@
-/* .carousel-item
+.available
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.available .available_heading
+{
+    width: 50%;
+    padding-bottom: 50px;
+    color: black;
+}
+.available .available_heading h3
+{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+.available .available_heading h3 span
+{
+    font-weight: 50;
+    color: black;
+}
+/* .content
+{
+    margin-block-start: 80px;
 
 } */
+.banner
+{
+  /* max-width: 100%; */
+  /* height: ; */
+  background-position: center center;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+
+}
