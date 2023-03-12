@@ -10,14 +10,15 @@
     // top: 0;
     // left: 0;
     z-index: 4;
+
   }
   &-form {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 6.2%;
   }
   &-input {
-    margin-left: 10px;
+    // margin-left: 10%;
     padding: 10px;
     width: 300px;
     border-top-left-radius: 5px;

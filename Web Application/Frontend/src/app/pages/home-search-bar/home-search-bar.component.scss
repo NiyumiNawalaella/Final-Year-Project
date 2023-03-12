@@ -1,6 +1,7 @@
 .filters {
   max-width: 1200px;
-  margin: 20px auto;
+  margin-left: 5.2%;
+  // margin: 20px auto;
   padding-left: 20px;
 }
 ::ng-deep {
@@ -29,11 +30,18 @@
 }
 .shops
 {
+  // display:inline-flex;
+  // flex-wrap:wrap;
+  // justify-content: center;
+  // max-width: 1200px;
+  // margin: 20px auto;
+  // margin-left: 20%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 20px auto;
+  flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .shop{
   width: 280px;
@@ -47,7 +55,7 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 4px 3px 11px 6px rgb(50, 245, 203);
+    box-shadow: 4px 3px 11px 6px rgb(10, 10, 10);
     transform: translateY(-3px);
   }
 
