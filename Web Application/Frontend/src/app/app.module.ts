@@ -24,6 +24,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { HomeSearchBarComponent } from './pages/home-search-bar/home-search-bar.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
+import { AdminAccountComponent } from './pages/admin-account/admin-account.component';
+import { ShopownerAccountComponent } from './pages/shopowner-account/shopowner-account.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
     PromotionComponent,
     SearchComponent,
     HomeSearchBarComponent,
+    AdminAccountComponent,
+    ShopownerAccountComponent,
   ],
   imports: [
     BrowserModule,
