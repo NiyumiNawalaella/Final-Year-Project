@@ -18,14 +18,13 @@
   position: relative;
   display: inline-block;
   padding: 4% 12%;
-  /* 10px 20px; */
   color: #03e9f4;
-  font-size: 16px;
+  font-size: 2vh;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 40px;
+  margin-top: 12%;
   letter-spacing: 4px;
 }
 
