@@ -5,6 +5,8 @@ import { AccountComponent } from './pages/account/account.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PromotionComponent } from './pages/promotion/promotion.component';
 import { SearchComponent } from './pages/search/search.component';
+import { AdminAccountComponent } from './pages/admin-account/admin-account.component';
+import { ShopownerAccountComponent } from './pages/shopowner-account/shopowner-account.component';
 
 
 const routes: Routes = [
@@ -13,7 +15,8 @@ const routes: Routes = [
   {path: 'account', component:AccountComponent},
   {path: 'promotion', component:PromotionComponent},
   {path: 'search', component:SearchComponent},
-
+  {path: 'admin_account', component:AdminAccountComponent},
+  {path: 'shopowner_account', component:ShopownerAccountComponent},
   {path: 'search/:shop-search', component:HomeComponent}
 
 ];
