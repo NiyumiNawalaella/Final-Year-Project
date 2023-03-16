@@ -1,10 +1,10 @@
 .ratings i{
   font-size: 16px;
-  color: red
+  color: red;
 }
 .strike-text{
   color: red;
-  text-decoration: line-through
+  text-decoration: line-through;
 }
 .product-image{
   width: 100%
@@ -17,15 +17,20 @@
   margin-top: 3px;
   background-color: blue;
   border-radius: 50%;
-  display: inline-block
+  display: inline-block;
 }
 .spec-1{
   color: #938787;
-  font-size: 15px
+  font-size: 15px;
 }
 h5{
-  font-weight: 400
+  font-weight: 400;
+}
+p {
+
+  height: 10vh;
 }
 .para{
-  font-size: 16px
+  font-size: 16px;
+  white-space: pre-wrap;
 }
