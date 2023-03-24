@@ -29,17 +29,23 @@
       <h3>Available<span> Brands</span></h3>
     </div>
     </div>
-<div class="search-container">
-  <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
-    <input
-    class="search-input"
-    name="search"
-    ngModel
-    placeholder="Enter Shop Name"
-    />
-    <button class="search-button">Search</button>
-  </form>
-</div>
+  <!-- #form="ngForm" (ngSubmit)="onSubmit(form)"> -->
+  <div class="search-box">
+    <form>
+      <div class="user-box">
+        <input type="text" name="search" required="" ngModel>
+        <label>Enter Shop Name</label>
+      </div>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Search
+      </a>
+    </form>
+  </div>
+
 <app-home-search-bar></app-home-search-bar>
 </section>
 
