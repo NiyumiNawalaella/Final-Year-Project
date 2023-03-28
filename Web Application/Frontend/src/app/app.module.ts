@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFireModule } from '@angular/fire/compat';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,7 @@ import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor'
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { AdminAccountComponent } from './pages/admin-account/admin-account.component';
 import { ShopownerAccountComponent } from './pages/shopowner-account/shopowner-account.component';
+import { environment } from 'src/environments/environment';
 
 
 @NgModule({
@@ -53,7 +55,8 @@ import { ShopownerAccountComponent } from './pages/shopowner-account/shopowner-a
     MatFormFieldModule,
     MatSelectModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
     {
