@@ -1,3 +1,7 @@
+body
+{
+  background-image: none;
+}
 .available
 {
     display: flex;
@@ -11,7 +15,7 @@
 {
     width: 50%;
     padding-bottom: 50px;
-    color: black;
+    color:  rgba(0,0,0,.5);
 }
 .available .available_heading h3
 {
@@ -41,43 +45,48 @@
 }
  .search-box {
 
-  position: static;
+  /* position: static;
    top: 165%;
   margin-left: 16%;
   margin-top: 5%;
-  width: 20%;
+
   padding: 2%;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 
 
 
 .search-box .user-box {
   position: relative;
+
+  padding: 5%;
 }
 
 .search-box .user-box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: black;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   outline: none;
   background: transparent;
+
 }
 .search-box .user-box label {
   position: absolute;
   top:0;
   left: 0;
-  padding: 10px 0;
+  /* padding: 10px 0; */
+
+  padding: 5%;
   font-size: 16px;
-  color: #fff;
+  color: black;
   pointer-events: none;
   transition: .5s;
 }
@@ -87,31 +96,40 @@
   top: -20px;
   left: 0;
   color: #03e9f4;
-  font-size: 12px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 15px;
+
+
 }
 
 .search-box form a {
   position: relative;
   display: inline-block;
-  padding: 4% 12%;
-  color: #03e9f4;
+  padding: 1% 3%;
+  color: #ffffff;
   font-size: 2vh;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 12%;
   letter-spacing: 4px;
+  position: static;
+   /* top: -165%; */
+  margin-left: 10%;
+  margin-top:-7vw;
+  transform: translate(-50%, -50%);
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-radius: 10px;
 }
 
 .search-box a:hover {
-  background: #03e9f4;
+  background: #000000;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #000000,
+              0 0 25px #000000,
+              0 0 50px #000000,
+              0 0 100px #000000;
 }
 
 .search-box a span {
@@ -124,7 +142,7 @@
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #000000);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -142,7 +160,7 @@
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #000000);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -161,7 +179,7 @@
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #000000);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s;
 }
@@ -180,7 +198,7 @@
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #000000);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s;
 }
