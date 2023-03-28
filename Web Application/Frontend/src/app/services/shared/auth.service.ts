@@ -20,4 +20,27 @@ export class AuthService {
       this.router.navigate(['/admin_account']);
     })
   }
+
+  //shop owner login method
+  shopowner_login(email:string, passsword: string)
+  {
+    this.fireauth.signInWithEmailAndPassword(email,passsword)
+    .then( () => {
+      localStorage.setItem('token','true');
+    }, err => {
+      alert(err.message);
+      this.router.navigate(['/shopowner_account']);
+    })
+  }
+
+  //sign out
+  logout() {
+    this.fireauth.signOut().then( ()  => {
+      localStorage.removeItem('token');
+      this.router.navigate(['/account']);
+
+    }, err => {
+      alert(err.message);
+    })
+  }
 }
