@@ -8,8 +8,8 @@ import { AuthService } from 'src/app/services/shared/auth.service';
 })
 export class AdminAccountComponent implements OnInit {
 
-  email: string = "";
-  password: string = "";
+  email: string = "admin@kzone.ac.lk";
+  password: string = "1WePrOvidE56";
 
   constructor(private auth: AuthService) {}
 
@@ -29,7 +29,7 @@ export class AdminAccountComponent implements OnInit {
     }
 
     this.auth.admin_login(this.email, this.password);
-    this.email = "admin@kzone.ac.lk";
-    this.password = "1WePrOvidE56";
+    this.email = "";
+    this.password = "";
   }
 }

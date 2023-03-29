@@ -3,13 +3,13 @@
   <form>
     <div class="user-box">
       <input type="text" name="email" [(ngModel)]="email" required="">
-      <label>Username</label>
+      <label>Email</label>
     </div>
     <div class="user-box">
       <input type="password" name="password"[(ngModel)]="password" required="">
       <label>Password</label>
     </div>
-    <a routerLink="admin_dashboard" routerLinkActive="active-link" (click)="login">
+    <a routerLink="/admin_dashboard" routerLinkActive="active-link" (click)="login">
       <span></span>
       <span></span>
       <span></span>

@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  BASE_URL: '',
+  // BASE_URL: '',
   // // API_URL: 'http://localhost:3000',
   firebase : {
     apiKey: "AIzaSyAjxYyfii13dwqgYxIzZpcvvUSmYSwW_qs",

@@ -10,30 +10,30 @@ import { HttpService } from 'src/app/services/http.service';
 })
 export class HomeSearchBarComponent {
 
-  public sort: string | undefined;
-  public shops: Array<Shop> | undefined;
+  // public sort: string | undefined;
+  // public shops: Array<Shop> | undefined;
 
-  constructor(private httpService: HttpService,
-    private activatedRoute: ActivatedRoute) {
+  // constructor(private httpService: HttpService,
+  //   private activatedRoute: ActivatedRoute) {
 
-  }
-  ngOnInit(): void {
-    this.activatedRoute.params.subscribe((params: Params) => {
-      if(params['shop-search']) {
-        this.searchShops('metacript',params['shop-search']);
-      }
-      else {
-        this.searchShops('metacript');
-      }
-    });
-  }
+  // }
+  // ngOnInit(): void {
+  //   this.activatedRoute.params.subscribe((params: Params) => {
+  //     if(params['shop-search']) {
+  //       this.searchShops('metacript',params['shop-search']);
+  //     }
+  //     else {
+  //       this.searchShops('metacript');
+  //     }
+  //   });
+  // }
 
-  searchShops(sort: string, search?: string): void {
-    this.httpService
-    .getShopList(sort, search)
-    .subscribe((shopList: APIResponse<Shop>)=> {
-      this.shops = shopList.results;
-      console.log(shopList);
-    });
-  }
+  // searchShops(sort: string, search?: string): void {
+  //   this.httpService
+  //   .getShopList(sort, search)
+  //   .subscribe((shopList: APIResponse<Shop>)=> {
+  //     this.shops = shopList.results;
+  //     console.log(shopList);
+  //   });
+  // }
 }

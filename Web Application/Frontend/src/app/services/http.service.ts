@@ -11,18 +11,18 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  getShopList(
-    ordering: string,
-    search?: string
-  ): Observable<APIResponse<Shop>> {
-    let params = new HttpParams().set('ordering', ordering);
+  // getShopList(
+  //   ordering: string,
+  //   search?: string
+  // ): Observable<APIResponse<Shop>> {
+  //   let params = new HttpParams().set('ordering', ordering);
 
-    if(search) {
-      params = new HttpParams().set('ordering', ordering).set('search',search);
-    }
+  //   if(search) {
+  //     params = new HttpParams().set('ordering', ordering).set('search',search);
+  //   }
 
-    return this.http.get<APIResponse<Shop>>(`${env.BASE_URL}/shops`,{
-      params: params,
-    });
-  }
+  //   // return this.http.get<APIResponse<Shop>>(`${env.BASE_URL}/shops`,{
+  //     // params: params,
+  //   // });
+  // }
 }
