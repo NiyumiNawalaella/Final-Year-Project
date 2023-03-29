@@ -28,6 +28,8 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { AdminAccountComponent } from './pages/admin-account/admin-account.component';
 import { ShopownerAccountComponent } from './pages/shopowner-account/shopowner-account.component';
 import { environment } from 'src/environments/environment';
+import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
+import { ShopownerDashboardComponent } from './pages/shopowner-dashboard/shopowner-dashboard.component';
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import { environment } from 'src/environments/environment';
     HomeSearchBarComponent,
     AdminAccountComponent,
     ShopownerAccountComponent,
+    AdminDashboardComponent,
+    ShopownerDashboardComponent,
   ],
   imports: [
     BrowserModule,
