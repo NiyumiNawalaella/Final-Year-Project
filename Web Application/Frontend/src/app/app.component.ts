@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/shared/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Frontend';
+  title = 'Kzone App';
+
+  constructor(public user: AuthService) {}
 }

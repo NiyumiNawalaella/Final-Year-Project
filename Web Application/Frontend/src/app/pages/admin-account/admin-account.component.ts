@@ -33,8 +33,8 @@ export class AdminAccountComponent implements OnInit {
       this.router.navigate(['/admin_dashboaord']);
     }
 
-    this.auth.admin_login(this.email, this.password);
-    this.email = "";
-    this.password = "";
+    // this.auth.admin_login(this.email, this.password);
+    // this.email = "";
+    // this.password = "";
   }
 }

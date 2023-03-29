@@ -1,6 +1,14 @@
+<!-- <div *ngIf="user.uid | async as uid; else login">User</div> -->
+<div *ngIf="user.shopownerid | async as shopownerid; else login">Shopowner</div>
+<div *ngIf="user.isAdmin | async">Admin</div>
+<div><button>Logout</button></div>
 <!-- Header -->
 <app-header></app-header>
 <!-- Body -->
 <router-outlet></router-outlet>
 <!-- Footer -->
 <app-footer></app-footer>
+
+<ng-template #login>
+    you need to login: <button routerLink="account">Login</button>
+</ng-template>
