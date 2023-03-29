@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { AuthService } from 'src/app/services/shared/auth.service';
 
 @Component({
@@ -8,10 +9,10 @@ import { AuthService } from 'src/app/services/shared/auth.service';
 })
 export class AdminAccountComponent implements OnInit {
 
-  email: string = "admin@kzone.ac.lk";
-  password: string = "1WePrOvidE56";
+  email: string = "";
+  password: string = "";
 
-  constructor(private auth: AuthService) {}
+  constructor(private auth: AuthService, public router: Router) {}
 
   ngOnInit(): void {
 
@@ -26,6 +27,10 @@ export class AdminAccountComponent implements OnInit {
     {
       alert("Please enter password");
       return;
+    }
+    if(this.email=="admin@kzone.ac.lk" && this.password=="1WePrOvidE56")
+    {
+      this.router.navigate(['/admin_dashboaord']);
     }
 
     this.auth.admin_login(this.email, this.password);
