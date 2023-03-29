@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -73,6 +74,7 @@ import { ShopownerDashboardComponent } from './pages/shopowner-dashboard/shopown
         measurementId: "G-ZLZYYS2W3E"
       }
     ),
+    AngularFireAuthModule,
   ],
   providers: [
     {

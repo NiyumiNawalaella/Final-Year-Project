@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuth } from 'angularfire2/auth';
 // import { AngularFireAuth } from '@angular/fire/compat/auth';
 // import { Router } from '@angular/router';
 import { of as observableOf } from 'rxjs';
@@ -12,7 +14,14 @@ export class AuthService {
     shopownerid = observableOf('1245');
     isAdmin = observableOf(true);
 
-    constructor () {}
+    constructor (private afAuth: AngularFireAuth) {}
+
+    login() {
+
+    }
+    logout() {
+
+    }
 //   constructor(private fireauth : AngularFireAuth, private router: Router  ) { }
 
   //admin login method
