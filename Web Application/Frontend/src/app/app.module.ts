@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AngularFireModule } from '@angular/fire/compat';
+// import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireModule } from 'angularfire2';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -60,7 +61,18 @@ import { ShopownerDashboardComponent } from './pages/shopowner-dashboard/shopown
     MatSelectModule,
     MatTabsModule,
     MatIconModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    // AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(
+      {
+        apiKey: "AIzaSyAjxYyfii13dwqgYxIzZpcvvUSmYSwW_qs",
+        authDomain: "shop-navigation-application.firebaseapp.com",
+        projectId: "shop-navigation-application",
+        storageBucket: "shop-navigation-application.appspot.com",
+        messagingSenderId: "130061722568",
+        appId: "1:130061722568:web:1ea048bdc73420d63d56fd",
+        measurementId: "G-ZLZYYS2W3E"
+      }
+    ),
   ],
   providers: [
     {

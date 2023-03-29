@@ -18,17 +18,17 @@ export class AdminAccountComponent implements OnInit {
 
   }
   login() {
-    if(this.email=="")
+    if(this.email="")
     {
       alert("Please enter email");
       return;
     }
-    if(this.password=="")
+    if(this.password="")
     {
       alert("Please enter password");
       return;
     }
-    if(this.email=="admin@kzone.ac.lk" && this.password=="1WePrOvidE56")
+    if((this.email="admin@kzone.ac.lk") && (this.password="1WePrOvidE56"))
     {
       this.router.navigate(['/admin_dashboaord']);
     }
