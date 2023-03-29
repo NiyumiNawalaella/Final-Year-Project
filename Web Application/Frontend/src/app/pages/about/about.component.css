@@ -41,7 +41,7 @@
 {
     width: 50%;
     padding-bottom: 50px;
-    color: black;
+    color: rgba(0,0,0,.5);
 }
 .gallery .gallery_heading h3
 {
@@ -87,7 +87,7 @@
 {
     width: 50%;
     padding-bottom: 50px;
-    color: black;
+    color: rgba(0,0,0,.5);
 }
 .testimonials .testimonials_heading h3
 {
@@ -268,7 +268,7 @@ button.close{
 {
     width: 50%;
     padding-bottom: 50px;
-    color: black;
+    color: rgba(0,0,0,.5);
 }
 .about .about_heading h3
 {
