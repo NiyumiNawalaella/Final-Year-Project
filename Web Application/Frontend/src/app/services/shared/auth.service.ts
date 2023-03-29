@@ -4,14 +4,18 @@ import { AngularFireAuth } from 'angularfire2/auth';
 // import { AngularFireAuth } from '@angular/fire/compat/auth';
 // import { Router } from '@angular/router';
 import { of as observableOf } from 'rxjs';
+import { map } from 'rxjs/operators';
+// import { auth } from 'firebase';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-    uid = observableOf('123');
-    shopownerid = observableOf('1245');
+    uid = this.afAuth.authState.pipe(
+        map(authState => authState.auth.uid),);
+    shopownerid  = this.afAuth.authState.pipe(
+        map(authState => authState.auth.shopownerid),);
     isAdmin = observableOf(true);
 
     constructor (private afAuth: AngularFireAuth) {}
